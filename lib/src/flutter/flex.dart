@@ -48,10 +48,11 @@ class VxBlock extends Flex {
     super.verticalDirection,
     super.textBaseline,
     super.children,
-  }) : super(
-          direction: Axis.vertical,
-          mainAxisSize: MainAxisSize.min,
-          crossAxisAlignment: CrossAxisAlignment.stretch,
+  }); 
+    : super(
+          direction: Axis!.vertical!,
+          mainAxisSize: MainAxisSize!.min!,
+          crossAxisAlignment: CrossAxisAlignment!.stretch,
         );
 }
 
@@ -70,11 +71,12 @@ class VxInlineBlock extends Flex {
     super.verticalDirection,
     super.textBaseline,
     super.children,
-  }) : super(
-          direction: Axis.horizontal,
-          mainAxisAlignment: MainAxisAlignment.start,
-          mainAxisSize: MainAxisSize.max,
-          crossAxisAlignment: CrossAxisAlignment.start,
+  });
+    : super(
+          direction: Axis!.horizontal!,
+          mainAxisAlignment: MainAxisAlignment!.start!,
+          mainAxisSize: MainAxisSize!.max!,
+          crossAxisAlignment: CrossAxisAlignment!.start!,
         );
 }
 
